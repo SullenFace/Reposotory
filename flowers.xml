@@ -1,37 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<bookstore>
+<flowerstore>
 
-<book category="COOKING">
-  <title lang="en">Everyday Italian</title>
-  <author>Giada De Laurentiis</author>
-  <year>2005</year>
-  <price>30.00</price>
-</book>
+<flower category="Rose">
+  <title lang="en">21 Roses</title>
+  <author>Elena Makeenko</author>
+  <date>11.05.2014 14:00</date>
+  <price>101.00</price>
+</flower>
 
-<book category="CHILDREN">
-  <title lang="en">Harry Potter</title>
-  <author>J K. Rowling</author>
-  <year>2005</year>
-  <price>29.99</price>
-</book>
+<flower category="Rose">
+  <title lang="en">3 Roses</title>
+  <author>Elena Makeenko</author>
+  <date>11.05.2014 14:00</date>
+  <price>15.00</price>
+</flower>
 
-<book category="WEB">
-  <title lang="en">XQuery Kick Start</title>
-  <author>James McGovern</author>
-  <author>Per Bothner</author>
-  <author>Kurt Cagle</author>
-  <author>James Linn</author>
-  <author>Vaidyanathan Nagarajan</author>
-  <year>2003</year>
-  <price>49.99</price>
-</book>
+<flower category="Tulip">
+  <title lang="en">19 Tulip</title>
+  <author>Emil Saga</author>
+  <date>11.05.2014 14:00</date>
+  <price>129.99</price>
+</flower>
 
-<book category="WEB">
-  <title lang="en">Learning XML</title>
-  <author>Erik T. Ray</author>
-  <year>2003</year>
-  <price>39.95</price>
-</book>
+<flower category="Carnations">
+  <title lang="en">1 Carnations</title>
+  <author>James Bothner</author>
+  <author>Leon Lova</author>
+  <date>11.05.2014 14:00</date>
+  <price>5.99</price>
+</flower>
 
-</bookstore>
+<flower category="Orchids">
+  <title lang="en">3 Orchids</title>
+  <author>Noah Signe</author>
+  <date>11.05.2014 14:00</date>
+  <price>305.95</price>
+</flower>
+
+</flowerstore>
