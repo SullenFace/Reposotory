@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<flowerstore>
+
+<flower category="Rose">
+  <title lang="en">21 Roses</title>
+  <author>Elena Makeenko</author>
+  <date>11.05.2014 14:00</date>
+  <price>101.00</price>
+</flower>
+
+<flower category="Rose">
+  <title lang="en">3 Roses</title>
+  <author>Elena Makeenko</author>
+  <date>11.05.2014 14:00</date>
+  <price>15.00</price>
+</flower>
+
+<flower category="Tulip">
+  <title lang="en">19 Tulip</title>
+  <author>Emil Saga</author>
+  <date>11.05.2014 14:00</date>
+  <price>129.99</price>
+</flower>
+
+<flower category="Carnations">
+  <title lang="en">1 Carnations</title>
+  <author>James Bothner</author>
+  <author>Leon Lova</author>
+  <date>11.05.2014 14:00</date>
+  <price>5.99</price>
+</flower>
+
+<flower category="Orchids">
+  <title lang="en">3 Orchids</title>
+  <author>Noah Signe</author>
+  <date>11.05.2014 14:00</date>
+  <price>305.95</price>
+</flower>
+
+</flowerstore>

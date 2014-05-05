@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+
+function loadXMLDoc(dname) //Функция, принимающая в качестве параметра название файла и возвращающая данные по запросу из ХМЛ
+{
+  xhttp=new XMLHttpRequest(); //создание экземпляра класса XMLHttpRequest с конструктором
+  xhttp.open("GET",dname,false); //вызывается метод создания запроса с параметрами (метод, урл, асинхронные запросы?, данные для авторизации  (если есть))
+  try {xhttp.responseType="msxml-document"} catch(err) {} // обработка исключений. если тип файла не xml - вернуть ошибку
+  xhttp.send(""); //отправка запроса
+  return xhttp; //возврат результата работы функции
+}
+
+var x=loadXMLDoc("flowers.xml"); //Создание объекта х черезе функцию loadXMLDoc
+var xml=x.responseXML; // создание объекта xml и помещение туда результата работы функции
+path="/flowerstore/flower[price>100]/title"; //путь к выбору элементов с заданными параметрами
+// code for IE
+if (window.ActiveXObject || xhttp.responseType=="msxml-document") //если используется ActiveX от IE или тип возращаемого значения является ХМЛ документ
+{
+xml.setProperty("SelectionLanguage","XPath"); //установка свойств
+nodes=xml.selectNodes(path); //указываем путь к элементу
+for (i=0;i<nodes.length;i++) //циклом считываем элементы ХМЛ файла
+  {
+  document.write(nodes[i].childNodes[0].nodeValue); // выводим элемент
+  document.write("<br>"); // перенос строки
+  }
+}
+
+// code for Chrome, Firefox, Opera, etc.
+else if (document.implementation && document.implementation.createDocument) //если объекты дом-структуры
+{
+var nodes=xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null); //заполняем переменную данными
+var result=nodes.iterateNext(); //выбрать следующий объект
+
+while (result) //до того момента, пока есть данные
+  {
+  document.write(result.childNodes[0].nodeValue); //выводим элемент
+  document.write("<br>"); //перенос строки
+  result=nodes.iterateNext(); //добавляем в переменную следующий элемент
+  }
+}
+
+</script>
+</body>
+</html>
