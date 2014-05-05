@@ -35,9 +35,7 @@ var result=nodes.iterateNext(); //выбрать следующий объект
 
 while (result) //до того момента, пока есть данные
   {
-  document.write(result.childNodes[0].nodeValue); //выводим элемент
-  document.write("<br>"); //перенос строки
-    document.write(result.childNodes[1].nodeValue); //выводим элемент
+  document.write(result.getElementsByTagName('title')[0].nodeValue); //выводим элемент
   document.write("<br>"); //перенос строки
   result=nodes.iterateNext(); //добавляем в переменную следующий элемент
   }
